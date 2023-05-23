@@ -1,13 +1,11 @@
 package com.jira.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import com.jira.constant.ConstantMappings;
 
-@RestController
-@RequestMapping(ConstantMappings.JIRA)
+@Controller
 public class HealthController {
 	
 	@GetMapping(ConstantMappings.HEALTH)
