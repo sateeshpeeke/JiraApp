@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.jira.constant.Constant;
 import com.jira.constant.ConstantMappings;
 import com.jira.service.LoginService;
 
@@ -17,17 +18,14 @@ public class LoginController {
 
 	@RequestMapping(ConstantMappings.LOGIN_PAGES)
 	public String loginForm() {
-		return "login";
+		return Constant.LOGIN;
 	}
 
 	@PostMapping(ConstantMappings.LOG_IN)
 	public String login(@RequestParam String email, @RequestParam String password) {
 
 		boolean flag = loginService.isValidCredentials(email, password);
-		if (flag == true) {
-			return "addTask";
-		} else {
-			return "error";
-		}
+
+		return flag == true ? Constant.ADD_TASK : Constant.ERROR;
 	}
 }
