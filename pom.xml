@@ -9,11 +9,11 @@
 		<version>2.7.10</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.kalyan</groupId>
-	<artifactId>UserLoginSpringBoot</artifactId>
+	<groupId>com.jira</groupId>
+	<artifactId>JiraApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>UserLoginSpringBoot</name>
-	<description>Demo project for Spring Boot</description>
+	<name>JiraApp</name>
+	<description>Demo Project For Story Tracking</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
