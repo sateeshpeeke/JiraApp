@@ -26,6 +26,7 @@ public class LoginController {
 
 		boolean flag = loginService.isValidCredentials(email, password);
 
-		return flag == true ? Constant.ADD_TASK : Constant.ERROR;
+		return flag == true ? Constant.LOGINSUCCESS : Constant.ERROR;
 	}
+
 }
